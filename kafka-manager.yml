@@ -1,6 +1,6 @@
     kafkamgr:
         container_name: kafkamgr
-        dns: 10.3.1.1
+        dns: 10.3.1.4
         dns_search:
             - ubuntu.home
             - home
