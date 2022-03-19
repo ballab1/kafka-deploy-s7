@@ -6,7 +6,8 @@ container_os: alpine
 environment:
     COMPOSE_HTTP_TIMEOUT: 120
     CFG_USER_SECRETS: ~/.inf
-    JMX_PORT: 7203
+    BROKER_JMX_PORT: 7201
+    ZOOKEEPER_JMX_PORT: 7200
     KAFKA_ID: 3
     KAFKAMGR_UID: 1000
     KAFKA_BOOTSTRAP_SERVERS: s3.ubuntu.home:9092,s4.ubuntu.home:9092,s8.ubuntu.home:9092
