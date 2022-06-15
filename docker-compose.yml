@@ -101,8 +101,8 @@ services:
             ZOOKEEPER_INITLIMIT: 10
             ZOOKEEPER_SYNCLIMIT: 5
             ZOOKEEPER_SERVER.1: s3.ubuntu.home:2888:3888
-            ZOOKEEPER_SERVER.2: s4.ubuntu.home:2888:3888
-            ZOOKEEPER_SERVER.3: 0.0.0.0:2888:3888
+            ZOOKEEPER_SERVER.2: 0.0.0.0:2888:3888
+            ZOOKEEPER_SERVER.3: s8.ubuntu.home:2888:3888
         hostname: zookeeper.s7.home
         image: ${DOCKER_REGISTRY:-s2.ubuntu.home:5000/}${CONTAINER_OS:-alpine}/confluent/${CONFLUENT_VERSION:-7.1.1}:${CONTAINER_TAG:-5bce7f429d08bf7ed86efee35b3ab2aca594b04fc5b60be3a1f4f0a32152e111}
         logging:
