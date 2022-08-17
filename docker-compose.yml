@@ -65,7 +65,7 @@ services:
             - ubuntu.home
             - home
         hostname: kafka-lag-exporter.s7.home
-        image: ${DOCKER_REGISTRY:-s2.ubuntu.home:5000/}thirdparty/kafka-lag-exporter:${KAFKA_LAG_EXPORTER_TAG:-0.6.8}
+        image: ${DOCKER_REGISTRY:-s2.ubuntu.home:5000/}thirdparty/kafka-lag-exporter:${KAFKA_LAG_EXPORTER_TAG:?}
         logging:
             driver: json-file
             options:
